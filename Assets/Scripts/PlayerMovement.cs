@@ -16,22 +16,22 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//get the horizontal axis that by default is bound by the arrow.
+        //get the horizontal axis that by default is bound by the arrow.
+   
+        //the value is in the range -1 to 1 
+        //make it move per seconds instead of frames
+        float translation = Input.GetAxis ("Horizontal") * speed * Time.deltaTime;
 
-		//the value is in the range -1 to 1 
-		//make it move per seconds instead of frames
-		float translation = Input.GetAxis ("Horizontal") * speed * Time.deltaTime;
+//		if (translation > 0) {
+//			transform.localScale = new Vector3 (1, 1, 1);
+//		} 
+//		else if(translation < 0) {
+//			transform.localScale = new Vector3 (-1, 1, 1);			
+//		}
 
-		if (translation > 0) {
-			transform.localScale = new Vector3 (1, 1, 1);
-		} 
-		else if(translation < 0) {
-			transform.localScale = new Vector3 (-1, 1, 1);			
-		}
-
-		if (transform.position.x + translation < rightWall && transform.position.x + translation > leftWall)
+		if (transform.position.x + translation < rightWall && transform.position.x + translation > leftWall) {
 			transform.Translate (translation, 0, 0);
-		
+		}		
 	    //switching between idale and walk states in anim
 		if (translation != 0) {
 			anim.SetFloat("PlayerSpeed", speed);
