@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.1" orientation="orthogonal" renderorder="right-down" width="50" height="12" tilewidth="71" tileheight="71" infinite="0" nextlayerid="4" nextobjectid="1">
+ <tileset firstgid="1" source="tiles_spritesheet.tsx"/>
+ <layer id="1" name="Ground" width="50" height="12">
+  <properties>
+   <property name="sortingOrder" value="false"/>
+   <property name="unity:isTrigger" value="false"/>
+   <property name="unity:layer" value="Default"/>
+   <property name="unity:sortingLayerName" value="Foreground"/>
+   <property name="unity:sortingOrder" value="0"/>
+   <property name="unity:tag" value="Untagged"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztk8EJACAMAzOui3SIbutLEIkg0YqKgXtf71EH4BW3zvFmh21wRjjajhTkqWcBjrajtETOsL6FdbA/YU71jkSYXa+DuUZQnaqv0OtQUTtO43ecxe+YIwO8u6V2
+  </data>
+ </layer>
+ <layer id="3" name="Water" width="50" height="12">
+  <properties>
+   <property name="sortingOrder" value="false"/>
+   <property name="unity:isTrigger" value="true"/>
+   <property name="unity:layer" value="Default"/>
+   <property name="unity:sortingLayerName" value="Foreground"/>
+   <property name="unity:sortingOrder" value="0"/>
+   <property name="unity:tag" value="Untagged"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMAoGHqQTgYcC0CECDwUw6g/KAACCQQhE
+  </data>
+ </layer>
+</map>
